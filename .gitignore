@@ -1,0 +1,44 @@
+# OS/Editor System Files
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+*.bak
+
+# Jupyter/IPython
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+*.pyc
+__pycache__/
+
+# Python virtual envs
+.env
+.venv
+venv/
+env/
+
+# Data outputs or auto-gen
+*.hdf5
+*.dat
+*.heic
+*.fits
+*.npy
+
+# Large raw sources (keep in external archive or DVC later)
+data/raw/
+data/raw/**/*.*
+!data/raw/Kato_2017/
+!data/raw/Yoshida_2016/
+
+# IDE/config
+.vscode/
+*.code-workspace
+.idea/
+*.swp
+
+
+#
+
+#git rm -r --cached .
+#git add .
+#git commit -m "Apply .gitignore cleanup and structure enforcement"

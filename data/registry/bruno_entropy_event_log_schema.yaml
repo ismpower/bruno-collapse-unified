@@ -1,0 +1,72 @@
+dataset_name: bruno_entropy_event_log
+description: >
+  Registry of high-confidence Bruno entropy collapse candidates including neutrino
+  detections, matched galaxies, and calculated fluence at Earth.
+
+columns:
+  - name: Event_Name
+    type: string
+    description: Bruno event identifier (typically IceCube-based)
+
+  - name: Detection_Date_UTC
+    type: datetime
+    description: UTC timestamp of the neutrino detection
+
+  - name: Source_Galaxy
+    type: string
+    description: Galaxy name from crossmatch
+
+  - name: RA_J2000
+    type: float
+    units: degrees
+    description: Right ascension of the candidate event
+
+  - name: Dec_J2000
+    type: float
+    units: degrees
+    description: Declination of the candidate event
+
+  - name: Distance_Mpc
+    type: float
+    units: Mpc
+    description: Estimated distance to the source
+
+  - name: Explosion_Energy_erg
+    type: float
+    units: erg
+    description: Assumed or modeled total explosion energy
+
+  - name: Bruno_Trigger_Time_s
+    type: float
+    units: seconds
+    description: Time offset relative to detection (post-processing trigger time)
+
+  - name: Estimated_Collapse_Time_UTC
+    type: datetime
+    description: Back-inferred time of entropy collapse based on neutrino data
+
+  - name: fluence_j_m2
+    type: float
+    units: J/m²
+    description: Fluence at Earth from modeled collapse
+
+  - name: Bruno_Threshold_Crossed
+    type: boolean
+    description: Whether fluence crossed Bruno alert threshold
+
+  - name: Neutrino_Detected
+    type: boolean
+    description: Whether a corresponding neutrino was observed (e.g. IceCube)
+
+  - name: Neutrino_Energy_TeV
+    type: float
+    units: TeV
+    description: Observed neutrino energy
+
+  - name: Positional_Match_Confidence
+    type: string
+    description: Qualitative match confidence ("High", "Medium", "Low")
+
+  - name: Notes
+    type: string
+    description: Notes on match status, special flags, or comments

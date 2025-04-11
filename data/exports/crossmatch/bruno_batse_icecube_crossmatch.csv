@@ -1,0 +1,2 @@
+Event_Name,Detection_Date_UTC,burst_id,fluence_j_m2,BATSE_Fluence_Total_J_m2,Neutrino_Energy_TeV,IceCube_energy,IceCube_ra_deg,IceCube_dec_deg
+IceCube-49427574,2025-03-30 08:31:06,910421,2.1e-05,5.268300000000001e-07,147.57,44729.695,0.8217592,0.11378086

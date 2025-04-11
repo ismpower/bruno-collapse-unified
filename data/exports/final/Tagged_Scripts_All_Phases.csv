@@ -1,0 +1,111 @@
+script_file,matched_equation,confidence_score
+Blackhole Entropy Comparison,Field Symmetry Discretization Curve,0.25
+Blackhole Entropy Evolution,Entropy Collapse Coherence Map,0.24
+Blackhole Entropy Fixed,Field Symmetry Discretization Curve,0.212
+Blackhole Entropy Graph,Surface Area Quantization Function,0.221
+Blackhole Entropy Observation,Entropy Collapse Coherence Map,0.259
+Blackhole Entropy Plots,Entropy Collapse Coherence Map,0.223
+Blackhole Entropy Shift,Entropy Collapse Coherence Map,0.223
+Blackhole Model Comparison,2D Surface Entropy Encoding Curve,0.222
+Blackhole QM Comparison,2D Surface Entropy Encoding Curve,0.206
+Blackhole Temp Reversal,Entropy Gradient Transition,0.201
+Blackhole Transision,2D Surface Entropy Encoding Curve,0.199
+Bose Einstein Entropy,Surface-Stabilized Collapse Limit,0.204
+Cosmis Entropy Hubble Test.py,Entropy Gradient Transition,0.251
+Cosmological Entropy Test,Entropy Gradient Transition,0.234
+Entropy Blackhole Model,Entropic Shell Compression Ratio,0.222
+Entropy Blackhole Obs,Entropy Gradient Transition,0.251
+Entropy Blackhole QM,Entropy Gradient Transition,0.229
+Entropy Correlation Test,Entropy Collapse Coherence Map,0.256
+Entropy Correlation Test 1.1,Entropy Collapse Coherence Map,0.261
+Entropy Correlation Test 1.2,Entropy Collapse Coherence Map,0.261
+Entropy Correlation Test 1.3,Entropy Collapse Coherence Map,0.261
+Entropy Correlation Test 1.4,Entropy Collapse Coherence Map,0.261
+Entropy Dark Energy Comparison,Entropy Anchoring Tensor,0.291
+Entropy Divergence Test,Entropy Gradient Transition,0.26
+Entropy Dynamic Test,Entropy Spike Curve,0.188
+Entropy Epoch Analysis,Entropy Collapse Coherence Map,0.225
+Entropy Equations,Entropy Gradient Transition,0.184
+Entropy Evaporation Comparison,2D Surface Entropy Encoding Curve,0.275
+Entropy Evaporation Comparison 1.1,2D Surface Entropy Encoding Curve,0.279
+Entropy Evaporation Comparison 1.2,2D Surface Entropy Encoding Curve,0.279
+Entropy Expension Analysis,Entropy Gradient Transition,0.256
+Entropy Gravity Eq,Entropy Gradient Transition,0.195
+Entropy Horizon Function Test,Entropy Collapse Coherence Map,0.303
+Entropy Horizon Table,Entropy Collapse Coherence Map,0.226
+Entropy Hubble Comparison,Entropy Anchoring Tensor,0.229
+Entropy Hubble Tension,Entropy Gradient Transition,0.202
+Entropy Hubble Test,Entropy Gradient Transition,0.194
+Entropy Model Convergence,Kelvin Vector Collapse Mapping,0.236
+Entropy No Spacetime,Entropy Gradient Transition,0.205
+Entropy Perturbation Test,Entropy Collapse Coherence Map,0.243
+Entropy Predictive Model,Entropy Collapse Coherence Map,0.244
+Entropy Predictive Model 1.1,Entropy Collapse Coherence Map,0.25
+Entropy Predictive Test,Kelvin Vector Collapse Mapping,0.229
+Entropy RData Model,Entropy Gradient Transition,0.218
+Entropy RData Model Test 1,Entropy Gradient Transition,0.267
+Entropy RData Model Test 1.1,Entropy Gradient Transition,0.276
+Entropy Saturation Function,Entropy Collapse Coherence Map,0.273
+Entropy Saturation Function 1.1,Entropy Collapse Coherence Map,0.289
+Entropy Saturation Function 1.2,Entropy Collapse Coherence Map,0.289
+Entropy Saturation Horizon,Entropy Gradient Transition,0.244
+Entropy Scaling Analysis,Entropy Gradient Transition,0.247
+Entropy Scaling Post Equilibrium,Entropy Reassembly Function,0.24
+Entropy Scaling Test,Entropy Gradient Transition,0.217
+Entropy Temp Shift,Entropy Gradient Transition,0.195
+Entropy Temp Testing Mod 1.py,Entropy Gradient Transition,0.24
+Entropy Temp Testing Mod 2.1.py,Entropy Gradient Transition,0.237
+Entropy Temp Testing Mod 2.3.py,Entropy Gradient Transition,0.237
+Entropy Temp Testing Mod 2.py,Entropy Gradient Transition,0.24
+Entropy Temp Testing Mod 3.1.py,Entropy Gradient Transition,0.237
+Entropy Temp Testing Mod 3.py,Entropy Gradient Transition,0.24
+Entropy Temp Testing Mod 4.0.py,Entropy Gradient Transition,0.237
+Entropy Temp Testing Mod.py,Entropy Gradient Transition,0.243
+Entropy Temperature Adjustment,Planck Area Compression Metric,0.241
+Entropy Temperature Correlatio,Field Alignment Lock Function,0.266
+Entropy Temperature Correlation,Field Alignment Lock Function,0.275
+Entropy Temperature Fix,Kelvin Collapse Limit,0.21
+Entropy Temperature Testing,Entropy Anchoring Tensor,0.246
+Entropy to Bh Mass,Entropy Collapse Coherence Map,0.184
+entropy_data.csv,Entropy Gradient Transition,0.173
+entropy_horizon_table.csv,Entropy Collapse Coherence Map,0.243
+entropy_water_vapor.csv,Entropy Gradient Transition,0.178
+Gw150914 Entropy Test,Entropy Gradient Transition,0.168
+Hawking Radiation Comparison,Entropy Anchoring Tensor,0.235
+Hubble Constant Check,Entropy Gradient Transition,0.18
+Micro System Equation,Surface-Stabilized Collapse Limit,0.175
+Modified Bh Equations.py,Quantum Field Freezing Ratio,0.19
+Modified Entropy Test,Quantum Collapse Efficiency Index,0.206
+Negative Entropy Calc,Entropy Gradient Transition,0.216
+Planck Entropy Analysis,Planck Area Compression Metric,0.24
+Planck Scale Entropy,Planck Area Compression Metric,0.212
+Primordial BH Constraints,Entropy Gradient Transition,0.246
+Quantum Entropy Correction,Field Symmetry Discretization Curve,0.242
+Quantum Entropy Eq,Field Symmetry Discretization Curve,0.195
+Quantum Entropy Eqs,Field Symmetry Discretization Curve,0.206
+Quantum Entropy Test,Collapse Ratio Equation,0.207
+Saturated Bh Entropy Model,Field Symmetry Discretization Curve,0.231
+Saturation Model Vs BH Entropy,Entropy Gradient Transition,0.261
+Second Equation Test,Entropy Collapse Coherence Map,0.205
+Standard Blackhole Model,Entropy Gradient Transition,0.247
+Standard Blackhole QM,Entropy Gradient Transition,0.228
+Superconductivity Entropy,Surface Area Quantization Function,0.2
+Third Equation Entropy,Entropy-Normalized Information Rate,0.199
+Temperature from Entropy 2.0,Entropy Reassembly Function,0.235
+Temperature from Entropy 2.1,Entropy Reassembly Function,0.235
+Temperature from Entropy 3,Entropy Reassembly Function,0.227
+Unified Abstract Summary,Kelvin Collapse Limit,0.199
+Chajar Constant,Entropy Collapse Coherence Map,0.152
+Entropy Collapse Test 1.1,Entropy Collapse Coherence Map,0.254
+Entropy Collapse Test 1.2,Entropy Collapse Coherence Map,0.254
+Entropy Collapse Test 1.3,Entropy Collapse Coherence Map,0.254
+Entropy Collapse Test 1.4,Entropy Collapse Coherence Map,0.254
+Entropy Collapse Test 1.5,Entropy Collapse Coherence Map,0.254
+Entropy Collapse Test 1.6,Entropy Collapse Coherence Map,0.254
+Entropy Collapse Test 1.7,Entropy Collapse Coherence Map,0.254
+Entropy Collapse Test 1.8,Entropy Collapse Coherence Map,0.254
+Entropy Collapse Test 1.9,Entropy Collapse Coherence Map,0.254
+Entropy Collapse Test 2.1,Entropy Collapse Coherence Map,0.254
+Entropy Collapse Test 2.2,Entropy Collapse Coherence Map,0.254
+Entropy Energy Temperature 1.0,Entropy Gradient Transition,0.284
+Entropy Energy Template,Entropy Gradient Transition,0.249

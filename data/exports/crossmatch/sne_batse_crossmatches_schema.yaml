@@ -1,0 +1,50 @@
+dataset_name: sne_batse_crossmatches
+description: >
+  Crossmatched events between supernovae and BATSE GRBs based on spatiotemporal proximity.
+
+columns:
+  - name: SN_Name
+    type: string
+    description: Supernova event name
+
+  - name: SN_Time
+    type: datetime
+    description: UTC timestamp of supernova observation
+
+  - name: SN_RA
+    type: float
+    units: degrees
+    description: Right ascension of the supernova
+
+  - name: SN_Dec
+    type: float
+    units: degrees
+    description: Declination of the supernova
+
+  - name: GRB_Trigger
+    type: string
+    description: GRB identifier or trigger ID
+
+  - name: GRB_Time
+    type: datetime
+    description: GRB trigger time (UTC)
+
+  - name: GRB_RA
+    type: float
+    units: degrees
+    description: Right ascension of the GRB event
+
+  - name: GRB_Dec
+    type: float
+    units: degrees
+    description: Declination of the GRB event
+
+  - name: Angular_Sep_deg
+    type: float
+    units: degrees
+    description: Angular separation between SN and GRB sky positions
+
+  - name: GRB_Fluence_J_per_m2
+    type: float
+    units: J/m²
+    description: Fluence of the GRB as received at Earth

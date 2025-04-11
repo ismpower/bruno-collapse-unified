@@ -1,0 +1,2 @@
+Event_Name,Detection_Date_UTC,Source_Galaxy,RA_J2000,Dec_J2000,Distance_Mpc,Explosion_Energy_erg,Bruno_Trigger_Time_s,Estimated_Collapse_Time_UTC,fluence_j_m2,Bruno_Threshold_Crossed,Neutrino_Detected,Neutrino_Energy_TeV,Positional_Match_Confidence,Notes
+IceCube-49427574,2025-03-30 08:31:06,UGC 11572,307.29,10.74,63.0,1e+52,1.936,2025-03-30 08:31:04.064,2.1e-05,True,True,147.57,High,Confirmed spatial + temporal match. First official Bruno entropy collapse candidate.

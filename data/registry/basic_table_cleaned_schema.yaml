@@ -1,0 +1,64 @@
+filename: basic_table_cleaned.csv
+description: |
+  Cleaned BATSE basic positional and timing information table.
+  Includes RA, Dec, Galactic coordinates, trigger timestamps, and event flags.
+
+source: NASA BATSE Catalog – Cleaned by Bruno Engine  
+validated: true
+
+columns:
+  - name: trigger
+    type: float
+    description: BATSE trigger number
+
+  - name: name
+    type: string
+    description: Official BATSE burst name (e.g. 4B 910421)
+
+  - name: tjd
+    type: float
+    description: Truncated Julian Date (TJD = JD - 2440000.5)
+
+  - name: time_sec
+    type: float
+    description: Time of trigger in seconds (UT) since start of the day
+
+  - name: ra_deg
+    type: float
+    description: Right Ascension in decimal degrees (J2000)
+
+  - name: dec_deg
+    type: float
+    description: Declination in decimal degrees (J2000)
+
+  - name: gal_lon
+    type: float
+    description: Galactic longitude in decimal degrees
+
+  - name: gal_lat
+    type: float
+    description: Galactic latitude in decimal degrees
+
+  - name: error_radius
+    type: float
+    description: Positional uncertainty radius in degrees
+
+  - name: geocenter_angle
+    type: float
+    description: Angle to the satellite nadir in degrees
+
+  - name: overwrite_flag
+    type: string
+    description: Flag indicating this burst overwrote a previous weaker trigger (Y/N)
+
+  - name: overwritten_flag
+    type: string
+    description: Flag indicating this burst was overwritten by a stronger event (Y/N)
+
+  - name: jd
+    type: float
+    description: Julian Date of the burst
+
+  - name: datetime
+    type: datetime
+    description: Converted datetime in UTC from JD and time

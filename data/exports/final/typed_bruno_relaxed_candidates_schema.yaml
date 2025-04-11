@@ -1,0 +1,85 @@
+dataset_name: typed_bruno_relaxed_candidates
+description: >
+  Relaxed entropy SN–GRB candidate matches with added supernova type and redshift data 
+  for downstream filtering, classification, and visual inspection.
+
+columns:
+  - name: SN_Name
+    type: string
+    description: Supernova identifier
+
+  - name: SN_Time
+    type: datetime
+    description: Timestamp of supernova observation
+
+  - name: SN_RA
+    type: float
+    units: degrees
+    description: Right ascension of the SN
+
+  - name: SN_Dec
+    type: float
+    units: degrees
+    description: Declination of the SN
+
+  - name: GRB_Trigger
+    type: string
+    description: GRB trigger ID
+
+  - name: GRB_Time
+    type: datetime
+    description: GRB event timestamp
+
+  - name: GRB_RA
+    type: float
+    units: degrees
+    description: Right ascension of the GRB
+
+  - name: GRB_Dec
+    type: float
+    units: degrees
+    description: Declination of the GRB
+
+  - name: Angular_Sep_deg
+    type: float
+    units: degrees
+    description: Angular separation between SN and GRB coordinates
+
+  - name: GRB_Fluence_J_per_m2
+    type: float
+    units: J/m²
+    description: Fluence of the GRB received at Earth
+
+  - name: Trigger_ID
+    type: string
+    description: Internal or catalog-level trigger identifier
+
+  - name: Fluence_Total_J_per_m2
+    type: float
+    units: J/m²
+    description: Modeled fluence based on entropy simulation
+
+  - name: Bruno_Class
+    type: string
+    description: Detection label (e.g. Relaxed, Positive)
+
+  - name: Time_Delay_s
+    type: float
+    units: seconds
+    description: Time difference between SN and GRB events
+
+  - name: Entropy_Candidate_Relaxed
+    type: boolean
+    description: Whether this candidate passed relaxed entropy criteria
+
+  - name: Name
+    type: string
+    description: Official name of the SN (redundant with SN_Name — consider renaming)
+
+  - name: Claimed_Type
+    type: string
+    description: Observed or catalogued SN type (e.g. II, Ic, Ia)
+
+  - name: Redshift
+    type: float
+    description: Redshift of the supernova host galaxy
