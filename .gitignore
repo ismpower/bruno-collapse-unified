@@ -42,3 +42,4 @@ data/raw/**/*.*
 #git rm -r --cached .
 #git add .
 #git commit -m "Apply .gitignore cleanup and structure enforcement"
+**/__pycache__/

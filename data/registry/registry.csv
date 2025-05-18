@@ -1,3 +1,0 @@
-source_name,dataset_id,ingest_path,registry_path,ingest_date,parser_used,schema_version,description,notes
-fermi,fermi_grb_2024,data/raw/fermi_swift_grb_catalog.csv,data/registry/fermi_clean.csv,2025-04-02,Bruno Parser Script.py,v1.0,Fermi/Swift GRB events with RA/Dec and energies,Manual extract from LAT database
-icecube,icecube_gold_bronze,data/raw/IceCube_Gold_Bronze_Events.csv,data/registry/icecube_gold_clean.csv,2025-04-02,crossmatch_bruno_with_icecube.py,v1.0,High-confidence neutrino alerts from IceCube web,Gold/Bronze only

@@ -1,0 +1,41 @@
+dataset_name: sn_bruno_candidates
+description: >
+  List of supernovae flagged as potential Bruno entropy collapse candidates,
+  enriched with redshift, distance, and modeled fluence data.
+
+columns:
+  - name: Name
+    type: string
+    description: Supernova identifier
+
+  - name: RA_deg
+    type: float
+    units: degrees
+    description: Right ascension of the supernova
+
+  - name: Dec_deg
+    type: float
+    units: degrees
+    description: Declination of the supernova
+
+  - name: Discovery_Date
+    type: datetime
+    description: Date of discovery or first observation
+
+  - name: Claimed_Type
+    type: string
+    description: Reported classification (e.g. II, Ib/c, Ia)
+
+  - name: Redshift
+    type: float
+    description: Observed redshift of the supernova
+
+  - name: Distance_Mpc
+    type: float
+    units: Mpc
+    description: Estimated distance in megaparsecs
+
+  - name: Fluence_at_Earth_J_per_m2
+    type: float
+    units: J/m²
+    description: Estimated modeled fluence reaching Earth

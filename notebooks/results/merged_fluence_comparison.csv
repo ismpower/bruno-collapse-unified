@@ -1,6 +1,0 @@
-progenitor_mass,hierarchy,flavor,total_energy_J,fluence_J_m2_@10kpc,bruno_trigger,model,phase
-m9,NH,nueb,1.4248785512327033e+33,1.1906281369287971e-09,False,Kato_2017,
-m12,NH,nueb,8.277904853020533e+31,6.91701508475867e-11,False,Kato_2017,
-m15,NH,nueb,1.5866378419659996e+32,1.3257941570714184e-10,False,Kato_2017,
-s15,,nueb,1.9868444681460342e+44,166.0206707041423,True,Odrywolek_2010,pre-collapse
-s25,,nueb,3.230625954169586e+44,269.95101846392856,True,Odrywolek_2010,pre-collapse
