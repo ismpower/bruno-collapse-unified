@@ -1,0 +1,214 @@
+{
+  "bruno-collapse-unified-main/notebooks/analysis/Betelgeuse_Entropy_audit/Betelgeuse_Entropy_audit.ipynb": {
+    "references": [
+      "intp2002.data"
+    ]
+  },
+  "bruno-collapse-unified-main/notebooks/analysis/Betelgeuse_Entropy_audit/Bruno_Betelgeuse_Fluence.ipynb": {
+    "references": [
+      "intp2002.data"
+    ]
+  },
+  "bruno-collapse-unified-main/notebooks/archive/Fluence_Model_Comparison_Annotated.ipynb": {
+    "references": [
+      "pd.data"
+    ]
+  },
+  "bruno-collapse-unified-main/notebooks/archive/Historical_Entropy_Audit.ipynb": {
+    "references": [
+      "bruno_engine_registry.csv",
+      "124mopen_supernova_catalog.csv",
+      "grb_catalog_cleaned.csv",
+      "icecube_hese.csv",
+      "uzc_fk_compact.csv",
+      "open_supernova_catalog.csv",
+      "pd.data",
+      "fermi_swift_grb_catalog.csv",
+      "pandas.core.frame.data",
+      "fluence_grid.csv",
+      "../data/raw/asassn_extracted_bruno_ready.csv",
+      "bruno_icecube_crossmatch.csv",
+      "asassn_extracted_bruno_ready.csv",
+      "../data/exports/bruno_icecube_crossmatch.csv",
+      "grb_icecube_crossmatch.csv",
+      "sn_bruno_candidates.csv",
+      "bruno_sn_icecube_matches.csv",
+      "grbweb_table.txt"
+    ]
+  },
+  "bruno-collapse-unified-main/notebooks/archive/structure.ipynb": {
+    "references": [
+      "batse_master_grb_registry.csv",
+      "sne_1990s_cleaned.csv",
+      "open_supernova_catalog.csv",
+      "bruno_batse_icecube_crossmatch.csv",
+      "bruno_grb_icecube_matches.csv",
+      "bruno_sn_icecube_matches.csv",
+      "grb_icecube_crossmatch.csv",
+      "sn_bruno_candidates.csv",
+      "fermi_swift_grb_catalog.csv",
+      "icecube_hese.csv",
+      "uzc_fk_compact.csv",
+      "basic_table_cleaned.csv",
+      "grb_catalog_cleaned.csv",
+      "grb_catalogue_cleaned.csv",
+      "bruno_entropy_event_log.csv",
+      "sne_batse_crossmatches.csv",
+      "bruno_events_registry.csv",
+      "data_file_registry.csv",
+      "supernova_bruno_fluence_table.csv",
+      "pd.data",
+      "fluency_column_update_report.csv",
+      "../data/registry/bruno_entropy_event_log.csv",
+      "../data/exports/final/bruno_highlight_events.csv",
+      "icecat1.csv",
+      "bruno_highlight_events.csv",
+      "bruno_clustered_entropy_candidates.csv",
+      "bruno_relaxed_entropy_candidates.csv",
+      "typed_bruno_relaxed_candidates.csv",
+      "bruno_icecube_crossmatch.csv",
+      "bruno_sn_grb_matrix.csv",
+      "entropy_data.csv",
+      "entropy_horizon_table.csv",
+      "entropy_water_vapor.csv",
+      "124micecat1.csv"
+    ]
+  },
+  "bruno-collapse-unified-main/notebooks/effective_area_models/EffectiveAreaUses.ipynb": {
+    "references": [
+      "effa_gfugold.txt",
+      "effa_ehegold.txt",
+      "effa_hesegold.txt",
+      "effa_gfubronze.txt",
+      "effa_hesebronze.txt",
+      "effa_all_streams_gold_only.txt",
+      "effa_all_streams_gold_bronze.txt",
+      "eff_area/effa_all_streams_gold_bronze.txt",
+      "43meff_area/effa_all_streams_gold_bronze.txt",
+      "eff_area/effa_all_streams_gold_only.txt"
+    ]
+  },
+  "bruno-collapse-unified-main/notebooks/legacy/Bruno_timeline_analysis.ipynb": {
+    "references": [
+      "bruno_engine_registry.csv",
+      "grb_catalog_cleaned.csv",
+      "icecube_hese.csv",
+      "uzc_fk_compact.csv",
+      "open_supernova_catalog.csv",
+      "batse_master_grb_registry.csv",
+      "sne_batse_crossmatches.csv",
+      "sne_1990s_cleaned.csv",
+      "pd.data",
+      "fermi_swift_grb_catalog.csv",
+      "pandas.core.frame.data",
+      "fluence_grid.csv",
+      "../data/raw/asassn_extracted_bruno_ready.csv",
+      "bruno_icecube_crossmatch.csv",
+      "asassn_extracted_bruno_ready.csv",
+      "../data/exports/bruno_icecube_crossmatch.csv",
+      "grb_icecube_crossmatch.csv",
+      "sn_bruno_candidates.csv",
+      "bruno_sn_icecube_matches.csv",
+      "grbweb_table.txt",
+      "bruno_grb_icecube_matches.csv",
+      "base_1.txt",
+      "base_2.txt",
+      "base_3.txt",
+      "basic_table.txt",
+      "batse_flux_catalog.csv",
+      "registry.csv",
+      "supernova_bruno_fluence_table.csv",
+      "/bruno_entropy_project/data/registry/basic_table_cleaned.csv",
+      "basic_table_cleaned.csv",
+      "bruno_batse_icecube_crossmatch.csv",
+      "registry_pre2000.csv",
+      "registry_post2000.csv",
+      "/bruno_entropy_project/data/registry/sne_1990s_cleaned.csv",
+      "/bruno_entropy_project/data/registry/batse_master_grb_registry.csv",
+      "/bruno_entropy_project/data/exports/sne_batse_crossmatches.csv",
+      "bruno_sn_grb_matrix.csv",
+      "bruno_relaxed_entropy_candidates.csv",
+      "bruno_clustered_entropy_candidates.csv",
+      "typed_bruno_relaxed_candidates.csv",
+      "sne_batse_new_matches.csv"
+    ]
+  },
+  "bruno-collapse-unified-main/notebooks/legacy/Fluence_Model_Comparison.ipynb": {
+    "references": [
+      "pd.data",
+      "kato_model_fluence_comparison.csv",
+      "../results/kato_model_fluence_comparison.csv",
+      "kato_precollapse_fluence.csv",
+      "s15_nuebar_data.txt",
+      "s25_nuebar_data.txt",
+      "odrzywolek_fluence.csv",
+      "merged_fluence_comparison.csv",
+      "patton_fluence.csv",
+      "t_spc_m15_1.2.txt",
+      "t_spc_m20_1.2.txt",
+      "t_spc_m12_1.2.txt"
+    ]
+  },
+  "bruno-collapse-unified-main/notebooks/legacy/Tools_Cleaner.ipynb": {
+    "references": []
+  },
+  "bruno-collapse-unified-main/notebooks/legacy/bruno_event_classifier.ipynb": {
+    "references": [
+      "pd.data",
+      "bruno_trigger_table.csv",
+      "bruno_trigger_table_with_status.csv"
+    ]
+  },
+  "bruno-collapse-unified-main/notebooks/legacy/prediction_multimessenger_coincidence_rate.ipynb": {
+    "references": [
+      "triggered_sne.csv",
+      "../data/exports/full_supernovae_fluence.csv",
+      "../data/raw/icecat.csv",
+      "pd.data",
+      "bruno_neutrino_matches.csv",
+      "results/bruno_multimessenger_event_candidates.csv"
+    ]
+  },
+  "bruno-collapse-unified-main/notebooks/legacy/legacy_home/Historical Entropy Audit.ipynb": {
+    "references": [
+      "pd.data"
+    ]
+  },
+  "bruno-collapse-unified-main/notebooks/legacy/legacy_home/Historical_Entropy_Audit_Rebuilt.ipynb": {
+    "references": [
+      "pd.data"
+    ]
+  },
+  "bruno-collapse-unified-main/notebooks/legacy/legacy_home/Historical_Entropy_Audit_Updated.ipynb": {
+    "references": [
+      "pd.data"
+    ]
+  },
+  "bruno-collapse-unified-main/notebooks/legacy/legacy_home/fluence map engine.ipynb": {
+    "references": [
+      "124m/mnt/data/bruno_engine_registry.csv",
+      "/mnt/data/bruno_engine_registry.csv"
+    ]
+  },
+  "bruno-collapse-unified-main/notebooks/simulation/BRUNO_GRCHOMBO_SIMULATION/BRUNO_GRCHOMBO_SIMULATION.ipynb": {
+    "references": [
+      "bruno_gr_sim_starter.npz",
+      "bruno_gr_sim_with_collapse_hook.npz",
+      "pd.data",
+      "bruno_collapse_zone_stats.csv",
+      "sn1987a_neutrino_burst.csv",
+      "gw150914_bruno_overlay_segment.csv",
+      "gw170817_strain_segment.npz",
+      "entropy_collapse_export_1.5.csv"
+    ]
+  },
+  "bruno-collapse-unified-main/notebooks/simulation/BRUNO_GRCHOMBO_SIMULATION/SCHOLARGPT_TEST1.ipynb": {
+    "references": [
+      "pd.data",
+      "entropy_collapse_export_1.5.csv"
+    ]
+  },
+  "bruno-collapse-unified-main/notebooks/simulation/pre-collapse fluence curve using SN1987A/SN1987.ipynb": {
+    "references": []
+  }
+}
