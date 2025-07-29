@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg
+*.egg-info/
+*.pyo
+*.pyd
+*.ipynb_checkpoints
+.env
+.venv/
+env/
+venv/
+*.sqlite3
+
+# Jupyter Notebook output
+.ipynb_checkpoints/
+*.nbconvert.ipynb
+
+# LaTeX
+*.aux
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+
+# OS-generated
+.DS_Store
+Thumbs.db
+
+# Git metadata
+*.swp
+*.swo
+
+# Data/output
+*.zip
+*.tar.gz
+*.bak
+*.tmp
+*.csv~
+
+# Optional large generated outputs
+/output/

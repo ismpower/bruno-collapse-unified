@@ -1,0 +1,37 @@
+dataset_name: bruno_highlight_events
+description: >
+  Manually curated highlight events from Bruno-positive candidates, including 
+  sky coordinates, discovery date, distance, and Earth fluence.
+
+columns:
+  - name: Name
+    type: string
+    description: Event or supernova name (e.g., SN2023xyz)
+
+  - name: RA_deg
+    type: float
+    units: degrees
+    description: Right Ascension of the event
+
+  - name: Dec_deg
+    type: float
+    units: degrees
+    description: Declination of the event
+
+  - name: Discovery_Date
+    type: datetime
+    description: Date the event was observed or discovered
+
+  - name: Distance_Mpc
+    type: float
+    units: Mpc
+    description: Estimated distance to the event
+
+  - name: Fluence_at_Earth_J_per_m2
+    type: float
+    units: J/m²
+    description: Estimated fluence reaching Earth
+
+  - name: Label
+    type: string
+    description: Manual label or classification (e.g., 'Confirmed', 'Relaxed')

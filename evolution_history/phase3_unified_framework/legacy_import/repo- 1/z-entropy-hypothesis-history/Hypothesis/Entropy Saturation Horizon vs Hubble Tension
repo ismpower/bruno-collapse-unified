@@ -1,0 +1,56 @@
+# Entropy Saturation Horizon vs. Hubble Tension
+
+## Objective
+To investigate whether the structural entropy horizon model correlates with the observed discrepancy in Hubble constant estimates (Planck vs. SH0ES). This test maps the entropy horizon to physical cosmic time, using corrected Hubble-based age estimates.
+
+---
+
+## Constants & Conversion
+- Hubble Constants:
+  - Planck H₀ = 67.4 km/s/Mpc
+  - SH0ES H₀ = 73.0 km/s/Mpc
+
+- Convert to **age of universe (Gyr)**:
+  \[
+  t = \frac{9.78}{H_0 / 100} \text{ Gyr}
+  \]
+
+- Planck age ≈ 13.94 Gyr
+- SH0ES age ≈ 13.39 Gyr
+
+---
+
+## Entropy Horizon Mapping
+We use the saturation model equation:
+\[
+\tau = \frac{-\ln(1 - S)}{k}
+\]
+where:
+- \( S \approx 0.99999999 \) (practical entropy saturation)
+- \( k = 0.001 \) (cosmological decay scale)
+
+We then normalize τ linearly across cosmic time:
+\[
+\tau(t) = \tau_{\text{max}} \cdot \frac{t}{t_{\text{SH0ES}}}
+\]
+
+### Results:
+- **Entropy horizon** τₘₐₓ = 18420.7
+- **Planck τ** = 19162.6
+- **SH0ES τ** = 18420.7
+- **Δτ** = 741.9 structural steps
+
+---
+
+## Interpretation
+- This Δτ structurally aligns with the range of entropy variation observed in our stellar/cosmological field model.
+- The entropy-based model predicts that **Hubble tension reflects a difference in observable structural evolution**, not just expansion rate.
+
+---
+
+## Next Steps
+- Validate Δτ using large-scale structure formation and CMB shift.
+- Run gravitational clustering models under varying τ constraints.
+- Test if this Δτ can map onto precision baryon acoustic oscillation phase offsets.
+
+---

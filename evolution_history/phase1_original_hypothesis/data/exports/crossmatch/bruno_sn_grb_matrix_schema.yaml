@@ -1,0 +1,82 @@
+dataset_name: bruno_sn_grb_matrix
+description: >
+  Matrix of crossmatched supernovae and GRBs enriched with entropy model fluence, 
+  Bruno classification, and time delay metrics.
+
+columns:
+  - name: SN_Name
+    type: string
+    description: Supernova identifier
+
+  - name: SN_Time
+    type: datetime
+    description: UTC timestamp of the supernova observation
+
+  - name: SN_RA
+    type: float
+    units: degrees
+    description: Right ascension of the supernova
+
+  - name: SN_Dec
+    type: float
+    units: degrees
+    description: Declination of the supernova
+
+  - name: GRB_Trigger
+    type: string
+    description: GRB trigger ID
+
+  - name: GRB_Time
+    type: datetime
+    description: UTC timestamp of the GRB detection
+
+  - name: GRB_RA
+    type: float
+    units: degrees
+    description: Right ascension of the GRB
+
+  - name: GRB_Dec
+    type: float
+    units: degrees
+    description: Declination of the GRB
+
+  - name: Angular_Sep_deg
+    type: float
+    units: degrees
+    description: Angular separation between SN and GRB positions
+
+  - name: GRB_Fluence_J_per_m2
+    type: float
+    units: J/m²
+    description: GRB fluence received at Earth
+
+  - name: Trigger_ID
+    type: string
+    description: Internal or observational trigger ID
+
+  - name: Fluence_Total_J_per_m2
+    type: float
+    units: J/m²
+    description: Total fluence (possibly simulated) reaching Earth
+
+  - name: Bruno_Class
+    type: string
+    description: Bruno classification label (e.g. 'Positive', 'Relaxed', 'Silent')
+
+  - name: Time_Delay_s
+    type: float
+    units: seconds
+    description: Time difference between SN and GRB events
+
+  - name: Entropy_Candidate
+    type: boolean
+    description: Flag for entropy-based collapse candidacy
+  
+  - name: Trigger_ID
+    type: float
+    description: BATSE trigger number (float), mapped to burst_id
+  
+  - name: mapped_burst_id
+    type: string
+    description: Primary burst ID used for validation and GRB registry matching
+

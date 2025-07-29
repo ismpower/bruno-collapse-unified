@@ -1,0 +1,141 @@
+filename: BATSE_Flux_Catalog.csv
+description: |
+  BATSE flux and fluence catalog including multi-channel energy measurements,
+  errors, and peak fluxes at multiple timescales. Used to compute fluence totals
+  and classify GRBs according to the Bruno threshold.
+
+source: NASA BATSE Catalog – Processed for Bruno Engine  
+validated: true
+
+columns:
+  - name: trigger
+    type: float
+    description: BATSE trigger number (primary key)
+
+  - name: fluence_ch1
+    type: float
+    description: Fluence in channel 1 (erg/cm²)
+
+  - name: err_ch1
+    type: float
+    description: Error in fluence_ch1
+
+  - name: fluence_ch2
+    type: float
+    description: Fluence in channel 2 (erg/cm²)
+
+  - name: err_ch2
+    type: float
+    description: Error in fluence_ch2
+
+  - name: fluence_ch3
+    type: float
+    description: Fluence in channel 3 (erg/cm²)
+
+  - name: err_ch3
+    type: float
+    description: Error in fluence_ch3
+
+  - name: fluence_ch4
+    type: float
+    description: Fluence in channel 4 (erg/cm²)
+
+  - name: err_ch4
+    type: float
+    description: Error in fluence_ch4
+
+  - name: peak_flux_64ms
+    type: float
+    description: Peak photon flux in 64 ms window (ph/cm²/s)
+
+  - name: err_flux_64ms
+    type: float
+    description: Error in peak_flux_64ms
+
+  - name: time_flux_64ms
+    type: float
+    description: Time of peak flux at 64 ms scale
+
+  - name: peak_flux_256ms
+    type: float
+    description: Peak photon flux in 256 ms window (ph/cm²/s)
+
+  - name: err_flux_256ms
+    type: float
+    description: Error in peak_flux_256ms
+
+  - name: time_flux_256ms
+    type: float
+    description: Time of peak flux at 256 ms scale
+
+  - name: peak_flux_1024ms
+    type: float
+    description: Peak photon flux in 1024 ms window (ph/cm²/s)
+
+  - name: err_flux_1024ms
+    type: float
+    description: Error in peak_flux_1024ms
+
+  - name: time_flux_1024ms
+    type: float
+    description: Time of peak flux at 1024 ms scale
+
+  - name: peak_64_ratio
+    type: float
+    description: Max count / threshold ratio at 64 ms
+
+  - name: threshold_64
+    type: float
+    description: Threshold count rate at 64 ms
+
+  - name: peak_256_ratio
+    type: float
+    description: Max count / threshold ratio at 256 ms
+
+  - name: threshold_256
+    type: float
+    description: Threshold count rate at 256 ms
+
+  - name: peak_1024_ratio
+    type: float
+    description: Max count / threshold ratio at 1024 ms
+
+  - name: threshold_1024
+    type: float
+    description: Threshold count rate at 1024 ms
+
+  - name: T50
+    type: float
+    description: Duration during which 50% of counts were detected
+
+  - name: T50_err
+    type: float
+    description: Error on T50
+
+  - name: T50_start
+    type: float
+    description: Start time of the T50 interval relative to trigger
+
+  - name: T90
+    type: float
+    description: Duration during which 90% of counts were detected
+
+  - name: T90_err
+    type: float
+    description: Error on T90
+
+  - name: T90_start
+    type: float
+    description: Start time of the T90 interval relative to trigger
+
+  - name: duration_class
+    type: string
+    description: GRB classification (short, long, unknown)
+
+  - name: fluence_total_erg_cm2
+    type: float
+    description: Sum of fluence_ch1 to ch4 (erg/cm²)
+
+  - name: fluence_total_J_m2
+    type: float
+    description: Converted total fluence (J/m²)

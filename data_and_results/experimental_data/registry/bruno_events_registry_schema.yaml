@@ -1,0 +1,69 @@
+filename: bruno_events_registry.csv
+description: |
+  Core Bruno entropy event registry. Tracks manually identified or automatically 
+  triggered entropy events including metadata about sources, energies, timing,
+  and detection flags.
+
+validated: true
+source: Bruno Engine (manual + automated ingestion)
+
+columns:
+  - name: Event Name
+    type: string
+    description: Name of the Bruno event or trigger (e.g., IceCube-49427574)
+
+  - name: Detection Date (UTC)
+    type: datetime
+    description: Datetime of detection in UTC
+
+  - name: Source Galaxy
+    type: string
+    description: Host or source galaxy of the event (if known)
+
+  - name: RA (J2000)
+    type: float
+    description: Right ascension in degrees (J2000 epoch)
+
+  - name: Dec (J2000)
+    type: float
+    description: Declination in degrees (J2000 epoch)
+
+  - name: Distance (Mpc)
+    type: float
+    description: Estimated distance to source in megaparsecs
+
+  - name: Explosion Energy (erg)
+    type: string
+    description: Explosion energy (in ergs), often in scientific notation (e.g., 1e52)
+
+  - name: Bruno Trigger Time (s)
+    type: float
+    description: Trigger offset time in seconds (relative to reference signal)
+
+  - name: Estimated Collapse Time (UTC)
+    type: datetime
+    description: Estimated core-collapse or entropy collapse time
+
+  - name: fluence_total_J_m2
+    type: float
+    description: Estimated neutrino/gamma-ray fluence at Earth in joules per square meter
+
+  - name: Bruno Threshold Crossed
+    type: boolean
+    description: Whether the Bruno fluence threshold was exceeded
+
+  - name: Neutrino Detected
+    type: boolean
+    description: Whether a neutrino detection was confirmed for the event
+
+  - name: Neutrino Energy (TeV)
+    type: float
+    description: Energy of detected neutrino in TeV
+
+  - name: Positional Match Confidence
+    type: string
+    description: Confidence level of spatial correlation (e.g., High, Medium)
+
+  - name: Notes
+    type: string
+    description: Free-text notes about the event or detection circumstances

@@ -1,0 +1,77 @@
+dataset_name: bruno_clustered_entropy_candidates
+description: >
+  Crossmatched supernova-GRB pairs flagged as entropy candidates (relaxed criteria) 
+  with clustering metadata for spatial/temporal grouping.
+
+columns:
+  - name: SN_Name
+    type: string
+    description: Supernova identifier
+
+  - name: SN_Time
+    type: datetime
+    description: UTC time of the supernova event
+
+  - name: SN_RA
+    type: float
+    units: degrees
+    description: Right ascension of the SN
+
+  - name: SN_Dec
+    type: float
+    units: degrees
+    description: Declination of the SN
+
+  - name: GRB_Trigger
+    type: string
+    description: GRB trigger ID
+
+  - name: GRB_Time
+    type: datetime
+    description: UTC time of the GRB event
+
+  - name: GRB_RA
+    type: float
+    units: degrees
+    description: Right ascension of the GRB
+
+  - name: GRB_Dec
+    type: float
+    units: degrees
+    description: Declination of the GRB
+
+  - name: Angular_Sep_deg
+    type: float
+    units: degrees
+    description: Angular distance between SN and GRB sky positions
+
+  - name: GRB_Fluence_J_per_m2
+    type: float
+    units: J/m²
+    description: GRB fluence received at Earth
+
+  - name: Trigger_ID
+    type: string
+    description: Unique trigger or event ID for internal tracking
+
+  - name: Fluence_Total_J_per_m2
+    type: float
+    units: J/m²
+    description: Simulated or aggregated fluence at Earth
+
+  - name: Bruno_Class
+    type: string
+    description: Bruno detection classification (e.g., Positive, Relaxed)
+
+  - name: Time_Delay_s
+    type: float
+    units: seconds
+    description: Time between GRB and SN observations
+
+  - name: Entropy_Candidate_Relaxed
+    type: boolean
+    description: Whether this match passed relaxed entropy criteria
+
+  - name: Cluster_ID
+    type: integer
+    description: Grouping ID for spatiotemporal clustering

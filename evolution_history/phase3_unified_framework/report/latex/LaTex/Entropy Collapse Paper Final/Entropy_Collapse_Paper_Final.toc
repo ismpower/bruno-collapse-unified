@@ -1,0 +1,20 @@
+\contentsline {section}{\numberline {1}Introduction}{3}{section.1}%
+\contentsline {section}{\numberline {2}Foundational Assumptions}{3}{section.2}%
+\contentsline {section}{\numberline {3}Entropy Collapse Mechanism}{4}{section.3}%
+\contentsline {section}{\numberline {4}Field Theory Formulation of Entropy Collapse}{5}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Equation Set and Collapse Threshold}{6}{subsection.4.1}%
+\contentsline {section}{\numberline {5}Discussion and Challenges}{9}{section.5}%
+\contentsline {section}{\numberline {6}Conclusion and Next Steps}{9}{section.6}%
+\contentsline {section}{\numberline {7}Figure Analysis and Simulation Results}{10}{section.7}%
+\contentsline {section}{\numberline {8}Dimensional Stabilization and Quantum Convergence}{10}{section.8}%
+\contentsline {section}{\numberline {9}Discussion and Challenges}{12}{section.9}%
+\contentsline {section}{\numberline {10}Conclusion and Next Steps}{12}{section.10}%
+\contentsline {section}{\numberline {A}Appendix A: Timeline of Script Development}{12}{appendix.A}%
+\contentsline {section}{\numberline {B}Appendix B: Figure Development Phases}{13}{appendix.B}%
+\contentsline {section}{\numberline {C}Toy Model: Entropy Gradient and Emergent Gravity}{13}{appendix.C}%
+\contentsline {section}{\numberline {D}Background and Motivation}{14}{appendix.D}%
+\contentsline {section}{\numberline {E}The Bruno Constant and Entropy Boundary}{15}{appendix.E}%
+\contentsline {section}{\numberline {F}Volume Compression and Entropy Density}{15}{appendix.F}%
+\contentsline {section}{\numberline {G}Surface Encoding and Holographic Consistency}{15}{appendix.G}%
+\contentsline {section}{\numberline {H}Discussion and Implications}{16}{appendix.H}%
+\contentsline {section}{\numberline {I}Conclusion}{16}{appendix.I}%

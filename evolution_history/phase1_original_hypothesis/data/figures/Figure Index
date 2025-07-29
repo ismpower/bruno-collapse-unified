@@ -1,0 +1,9 @@
+# 📊 Entropy Collapse – Figure Index
+
+| Figure Filename         | Description                                               | Related Script                    | Data Source                        | Notes                                               |
+|-------------------------|-----------------------------------------------------------|------------------------------------|-------------------------------------|-----------------------------------------------------|
+| fig_bruno_1_5.png       | Bruno Constant emergence during entropy collapse (Test 1.5) | Entropy Collapse Test 1.5.py       | Entropy_Collapse_Export_1.5.csv    | Collapse transition visible near T ~ 1e31; clear surface-bound flip |
+| fig_bruno_vs_temperature_1_5.png | Bruno Constant as a function of entropy-derived temperature | Entropy Collapse Test 1.5.py | Entropy_Collapse_Export_1.5.csv | Confirms Bruno ∝ T under radiation scaling |
+| fig_bruno_vs_temperature_marked_1_5.png | Bruno Constant vs temperature with collapse threshold marker | Entropy Collapse Test 1.5.py | Entropy_Collapse_Export_1.5.csv | Collapse threshold occurs immediately at T = 1 K |
+| fig_bruno_collapse_surface.png | Entropy collapse surface equation showing transition from volume to surface dominance at T = 7.61e-4 K | Bruno_Constant_Extraction.py | Generated from collapse_surface_eq script | Shows entropy scaling flip based on κ; validates projection threshold |
+| fig_bruno_compare_volume_models.png | Entropy collapse comparison between expanding and fixed-volume systems | Bruno_Constant_Extraction.py | Collapse comparison script | Demonstrates Bruno threshold is geometry-sensitive |

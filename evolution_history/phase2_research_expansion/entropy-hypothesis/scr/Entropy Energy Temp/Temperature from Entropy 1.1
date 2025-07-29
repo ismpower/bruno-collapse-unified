@@ -1,0 +1,116 @@
+# 📘 Entropy-First Model: Deriving Energy-Temperature Relations
+# 📂 Script Name: Entropy Energy Temperature_1.1
+# Figure 58
+
+# Constants
+k_B = 1.380649e-23  # Boltzmann constant (J/K)
+c = 299792458       # Speed of light (m/s)
+h = 6.62607015e-34  # Planck constant (J*s)
+
+# Foundational Assumptions (Entropy-First Framework):
+# 1. Entropy (S) is treated as the fundamental descriptor of any system.
+# 2. Temperature (T) is emergent and only meaningful in the presence of energy distribution.
+# 3. Energy (E) exists as the field excitation structured by entropy, not as an independent primitive.
+
+# Start with statistical thermodynamics:
+# Traditional: S = k_B * ln(W)  =>  entropy is a measure of state multiplicity
+
+# Postulate 1: Define entropy in terms of energy field coherence:
+# For a system governed by coherent field states:
+# S = k_B * ln(Ω(E)) where Ω(E) is the count of distinguishable energy field configurations
+
+# Goal: Derive T(E) from dS/dE (temperature as a derivative)
+# By entropy-first:
+#   1/T = dS/dE  =>  T(E) = 1 / (dS/dE)
+# The shape of S(E) dictates the thermodynamic evolution
+
+# Hypothesis-based example:
+def entropy_field_model(E, alpha=1.5, E0=1e-21):
+    """
+    Hypothetical entropy function based on energy coherence decay.
+    S(E) = k_B * (E / E0)^alpha  
+    This represents entropy as a power-law growth of distinguishable energy states.
+    """
+    from numpy import power, log
+    return k_B * power(E / E0, alpha)
+
+def temperature_from_entropy(E, alpha=1.5, E0=1e-21):
+    """
+    Derived temperature function: T(E) = 1 / (dS/dE)
+    where S(E) = k_B * (E / E0)^alpha
+    => dS/dE = alpha * k_B / E0 * (E / E0)^(alpha - 1)
+    => T(E) = E0 / (alpha * k_B * (E / E0)^(alpha - 1))
+    """
+    from numpy import power
+    dSdE = alpha * k_B / E0 * power(E / E0, alpha - 1)
+    return 1 / dSdE
+
+# This equation allows comparison to observational data (e.g. CMB, blackbody curves)
+
+# ❓ Questions to Explore:
+# 1. Does this entropy-driven formulation predict known cosmic background behavior?
+# 2. Can deviations from Planck radiation law at quantum limits be explained via entropy curvature?
+# 3. Is there a critical entropy threshold below which temperature becomes undefined?
+
+# ✅ Load and extract relevant energy-temperature points from the uploaded simulation file
+
+import pandas as pd
+import re
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Function to extract data from Roman simulation mock catalog
+
+def load_roman_mock_catalog(file_path):
+    df = pd.read_csv(file_path)
+    return df
+
+# ✅ Convert AB magnitude to flux (W/m^2/Hz)
+
+def abmag_to_flux_wm2hz(mag):
+    """
+    Convert AB magnitude to flux density in W/m^2/Hz.
+    AB system zero point: F = 10^(-(mag + 48.6) / 2.5) * 1e-26
+    """
+    return 10 ** (-(mag + 48.6) / 2.5) * 1e-26
+
+# ✅ Apply the entropy model to flux values to compute theoretical temperature
+
+def compute_entropy_temperature_column(df, flux_column_name, new_column_name):
+    df[new_column_name] = temperature_from_entropy(df[flux_column_name])
+    return df
+
+# ✅ Plot results
+
+def plot_flux_vs_temperature(df):
+    plt.figure(figsize=(8, 6))
+    plt.loglog(df['Flux_MAGH'], df['Temp_from_MAGH'], 'o', markersize=4, alpha=0.6, label='Temp from MAGH')
+    plt.loglog(df['Flux_APMAG_H'], df['Temp_from_APMAG_H'], 'x', markersize=4, alpha=0.6, label='Temp from APMAG_H')
+    plt.xlabel("Flux (W/m²/Hz)")
+    plt.ylabel("Entropy-derived Temperature (K)")
+    plt.title("Entropy-First Model: Temperature vs Flux")
+    plt.grid(True, which="both", ls="--", lw=0.5)
+    plt.legend()
+    plt.tight_layout()
+    plt.show()
+
+# ✅ Run Workflow
+if __name__ == "__main__":
+    # Load the catalog
+    df = load_roman_mock_catalog("entropy-hypothesis/Data/hlsp_rslss_roman_wfi_multi_wfc_v1_sim-ultradeep-mocks.csv")
+
+    # Convert magnitudes to flux
+    df['Flux_MAGH'] = abmag_to_flux_wm2hz(df['MAGH'])
+    df['Flux_APMAG_H'] = abmag_to_flux_wm2hz(df['APMAG_H'])
+
+    # Apply entropy-based temperature model
+    df = compute_entropy_temperature_column(df, 'Flux_MAGH', 'Temp_from_MAGH')
+    df = compute_entropy_temperature_column(df, 'Flux_APMAG_H', 'Temp_from_APMAG_H')
+
+    # Preview the output
+    print(df[['MAGH', 'APMAG_H', 'Flux_MAGH', 'Flux_APMAG_H', 'Temp_from_MAGH', 'Temp_from_APMAG_H']].head())
+
+    # Plot flux vs entropy-derived temperature
+    plot_flux_vs_temperature(df)
+
+# Next: Optionally overlay Planck blackbody comparison or redshift-based scaling

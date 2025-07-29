@@ -1,0 +1,54 @@
+dataset_name: bruno_icecube_crossmatch
+description: >
+  Crossmatched events between Bruno-flagged entropy collapses and IceCube neutrino detections.
+
+columns:
+  - name: Bruno_Trigger
+    type: string
+    description: Event ID from Bruno registry
+
+  - name: Bruno_Time
+    type: datetime
+    description: UTC timestamp of Bruno event collapse trigger
+
+  - name: RA_deg
+    type: float
+    units: degrees
+    description: Bruno event right ascension
+
+  - name: Dec_deg
+    type: float
+    units: degrees
+    description: Bruno event declination
+
+  - name: IceCube_Event
+    type: string
+    description: IceCube neutrino event ID
+
+  - name: IceCube_Time
+    type: datetime
+    description: UTC timestamp of IceCube detection
+
+  - name: IceCube_RA
+    type: float
+    units: degrees
+    description: IceCube reconstructed event RA
+
+  - name: IceCube_Dec
+    type: float
+    units: degrees
+    description: IceCube reconstructed event Dec
+
+  - name: Angular_Sep_deg
+    type: float
+    units: degrees
+    description: Angular separation between Bruno and IceCube event
+
+  - name: Neutrino_Energy_TeV
+    type: float
+    units: TeV
+    description: Reconstructed energy of the neutrino
+
+  - name: Positional_Match_Confidence
+    type: string
+    description: Qualitative confidence in spatial match (e.g. High, Medium, Low)

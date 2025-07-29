@@ -1,0 +1,48 @@
+from gwpy.timeseries import TimeSeries
+import matplotlib.pyplot as plt
+
+# Load 10 seconds of real LIGO data from Hanford (H1) and Livingston (L1)
+gps_start = 1126259462  # Time of GW150914 event
+duration = 10  # Seconds of data
+data_H1 = TimeSeries.fetch_open_data('H1', gps_start, gps_start + duration)
+data_L1 = TimeSeries.fetch_open_data('L1', gps_start, gps_start + duration)
+
+# Apply a band-pass filter (30-300 Hz) to remove noise
+filtered_H1 = data_H1.bandpass(30, 300)
+filtered_L1 = data_L1.bandpass(30, 300)
+
+# Load the official GW150914 waveform model and normalize it
+gw150914_H1 = TimeSeries.fetch_open_data('H1', gps_start, gps_start + duration, verbose=True).whiten()
+gw150914_L1 = TimeSeries.fetch_open_data('L1', gps_start, gps_start + duration, verbose=True).whiten()
+
+# Normalize data for better visualization
+filtered_H1 /= max(abs(filtered_H1.value))  # Scale to [-1, 1]
+filtered_L1 /= max(abs(filtered_L1.value))
+gw150914_H1 /= max(abs(gw150914_H1.value))  # Scale waveform to [-1, 1]
+gw150914_L1 /= max(abs(gw150914_L1.value))
+
+# Plot the results
+plt.figure(figsize=(12, 6))
+
+# Hanford Detector
+plt.subplot(2, 1, 1)
+plt.plot(filtered_H1.times, filtered_H1.value, color="blue", linewidth=0.8, label="Filtered H1 Data")
+plt.plot(gw150914_H1.times, gw150914_H1.value, color="red", linestyle="dashed", linewidth=1.2, label="GW150914 Theoretical Waveform")
+plt.xlabel("Time (s)")
+plt.ylabel("Normalized Strain")
+plt.title("LIGO Hanford Detector - GW150914")
+plt.legend()
+plt.grid()
+
+# Livingston Detector
+plt.subplot(2, 1, 2)
+plt.plot(filtered_L1.times, filtered_L1.value, color="green", linewidth=0.8, label="Filtered L1 Data")
+plt.plot(gw150914_L1.times, gw150914_L1.value, color="red", linestyle="dashed", linewidth=1.2, label="GW150914 Theoretical Waveform")
+plt.xlabel("Time (s)")
+plt.ylabel("Normalized Strain")
+plt.title("LIGO Livingston Detector - GW150914")
+plt.legend()
+plt.grid()
+
+plt.tight_layout()
+plt.show()

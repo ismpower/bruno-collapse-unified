@@ -1,0 +1,52 @@
+filename: Supernova_Bruno_Fluence_Table.csv
+description: |
+  Fluence and entropy modeling table for nearby supernovae, compiled for 
+  estimating Bruno detection thresholds based on distance and explosion energy.
+
+source: Bruno Entropy Engine simulation results
+validated: true
+
+columns:
+  - name: name
+    type: string
+    description: Designation of the supernova (e.g. SN1999em)
+
+  - name: ra_deg
+    type: float
+    description: Right Ascension (J2000) in decimal degrees
+
+  - name: dec_deg
+    type: float
+    description: Declination (J2000) in decimal degrees
+
+  - name: discoverdate
+    type: datetime
+    description: Discovery date of the supernova
+
+  - name: type
+    type: string
+    description: Classification of the SN (e.g., LGRB, CCSN, IIn, etc.)
+
+  - name: redshift
+    type: float
+    description: Redshift of the host galaxy
+
+  - name: distance_mpc
+    type: float
+    description: Estimated distance to the supernova in megaparsecs
+
+  - name: fluence_j_m2
+    type: float
+    description: Estimated total fluence at Earth in joules per square meter (J/m²)
+
+  - name: bruno_triggered
+    type: boolean
+    description: Whether the event exceeds Bruno threshold fluence
+
+  - name: explosion_energy_erg
+    type: float
+    description: Modeled explosion energy in ergs
+
+  - name: entropy_valid
+    type: boolean
+    description: Indicates if the SN event is valid for entropy analysis (well-constrained parameters)

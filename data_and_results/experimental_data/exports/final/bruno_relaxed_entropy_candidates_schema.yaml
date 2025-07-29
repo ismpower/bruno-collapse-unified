@@ -1,0 +1,73 @@
+dataset_name: bruno_relaxed_entropy_candidates
+description: >
+  Relaxed threshold entropy candidates matching SN–GRB pairs where fluence 
+  and angular proximity met looser Bruno conditions. Includes entropy tagging.
+
+columns:
+  - name: SN_Name
+    type: string
+    description: Supernova name
+
+  - name: SN_Time
+    type: datetime
+    description: Observation time of the supernova
+
+  - name: SN_RA
+    type: float
+    units: degrees
+    description: Right ascension of the supernova
+
+  - name: SN_Dec
+    type: float
+    units: degrees
+    description: Declination of the supernova
+
+  - name: GRB_Trigger
+    type: string
+    description: BATSE or Swift GRB trigger ID
+
+  - name: GRB_Time
+    type: datetime
+    description: GRB detection timestamp (UTC)
+
+  - name: GRB_RA
+    type: float
+    units: degrees
+    description: GRB right ascension
+
+  - name: GRB_Dec
+    type: float
+    units: degrees
+    description: GRB declination
+
+  - name: Angular_Sep_deg
+    type: float
+    units: degrees
+    description: Angular separation between SN and GRB
+
+  - name: GRB_Fluence_J_per_m2
+    type: float
+    units: J/m²
+    description: Fluence of the GRB received at Earth
+
+  - name: Trigger_ID
+    type: string
+    description: Internal or catalog trigger ID used for indexing
+
+  - name: Fluence_Total_J_per_m2
+    type: float
+    units: J/m²
+    description: Simulated or integrated fluence value at Earth
+
+  - name: Bruno_Class
+    type: string
+    description: Bruno detection classification (e.g. Relaxed, Positive)
+
+  - name: Time_Delay_s
+    type: float
+    units: seconds
+    description: Temporal offset between GRB and SN detection
+
+  - name: Entropy_Candidate_Relaxed
+    type: boolean
+    description: Boolean flag for relaxed entropy classification

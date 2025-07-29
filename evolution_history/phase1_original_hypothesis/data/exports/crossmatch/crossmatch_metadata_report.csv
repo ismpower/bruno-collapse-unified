@@ -1,0 +1,10 @@
+file,rows,columns,column_names,has_mapped_burst_id,has_Trigger_ID,nulls_in_mapped_burst_id,nulls_in_Trigger_ID
+bruno_batse_icecube_crossmatch.csv,ERROR,ERROR,❌ Failed to read: No columns to parse from file,False,False,N/A,N/A
+bruno_grb_icecube_matches.csv,ERROR,ERROR,❌ Failed to read: No columns to parse from file,False,False,N/A,N/A
+bruno_icecube_crossmatch.csv,7,11,"Bruno_Trigger, Bruno_Time, RA_deg, Dec_deg, IceCube_Event, IceCube_Time, IceCube_RA, IceCube_Dec, Angular_Sep_deg, Neutrino_Energy_TeV, Positional_Match_Confidence",False,False,N/A,N/A
+bruno_sn_grb_matrix.csv,845,14,"SN_Name, SN_Time, SN_RA, SN_Dec, GRB_Time, GRB_RA, GRB_Dec, Angular_Sep_deg, GRB_Fluence_J_per_m2, Trigger_ID, Fluence_Total_J_per_m2, Bruno_Class, Time_Delay_s, Entropy_Candidate",False,True,N/A,0
+bruno_sn_grb_matrix_cleaned.csv,845,15,"SN_Name, SN_Time, SN_RA, SN_Dec, GRB_Time, GRB_RA, GRB_Dec, Angular_Sep_deg, GRB_Fluence_J_per_m2, Trigger_ID, Fluence_Total_J_per_m2, Bruno_Class, Time_Delay_s, Entropy_Candidate, mapped_burst_id",True,True,0,0
+bruno_sn_icecube_matches.csv,ERROR,ERROR,❌ Failed to read: No columns to parse from file,False,False,N/A,N/A
+grb_icecube_crossmatch.csv,ERROR,ERROR,❌ Failed to read: No columns to parse from file,False,False,N/A,N/A
+sne_batse_crossmatches.csv,845,10,"SN_Name, SN_Time, SN_RA, SN_Dec, GRB_Trigger, GRB_Time, GRB_RA, GRB_Dec, Angular_Sep_deg, GRB_Fluence_J_per_m2",False,False,N/A,N/A
+sne_batse_crossmatches_cleaned.csv,845,11,"SN_Name, SN_Time, SN_RA, SN_Dec, GRB_Trigger, GRB_Time, GRB_RA, GRB_Dec, Angular_Sep_deg, GRB_Fluence_J_per_m2, mapped_burst_id",True,False,0,N/A

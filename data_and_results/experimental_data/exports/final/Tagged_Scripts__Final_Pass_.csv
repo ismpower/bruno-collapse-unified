@@ -1,0 +1,10 @@
+script_file,matched_equation,confidence_score
+Figure 59 Caption,Entropy Surface-to-Volume Ratio,0.142
+Figure 60 Caption,Entropy Surface-to-Volume Ratio,0.142
+Figure_60.png,Entropy Gradient Transition,0.101
+Figure_60_Data.csv,Planck Area Compression Metric,0.128
+Temperature from Entropy 1.0,Entropy Reassembly Function,0.235
+Temperature from Entropy 1.1,Entropy Reassembly Function,0.235
+Entropy Gravity Relation,Entropy Gradient Transition,0.235
+Obervational Dark Matter,Entropy Gradient Transition,0.235
+Quantum Lock Entropy,Entropy-Normalized Information Rate,0.191

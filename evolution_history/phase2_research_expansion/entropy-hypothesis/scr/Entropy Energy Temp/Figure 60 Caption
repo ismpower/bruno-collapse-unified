@@ -1,0 +1,13 @@
+**Figure 60 — Divergence Between Classical and Entropy-Based Temperature Models Across Flux and Frequency**
+
+This figure compares temperatures derived from two fundamentally different models using real astronomical data from the Roman Space Telescope mock catalog:
+
+- The **entropy-first model**, which treats temperature as an emergent result of field structure and energy organization, not as a direct function of flux.
+- The **Planck (classical blackbody) model**, which interprets flux through the lens of equilibrium thermodynamics and radiation law, shown here using the Wien approximation across three frequency bands.
+
+Despite overlapping input data, the temperature curves diverge significantly. The entropy-based model yields high, scale-sensitive temperatures even at extremely low flux densities—suggesting that thermodynamic equilibrium is not a sufficient descriptor of deep-field signal structure. Classical Planck-based estimates, in contrast, flatten quickly and exhibit minimal variation across flux or frequency once saturation sets in.
+
+This empirical result supports the hypothesis that temperature in cosmological environments is not a primitive thermodynamic property, but rather a product of the underlying entropy structure of spacetime and energy configuration. The entropy-first formulation offers a more dynamic interpretation of faint signals that may reflect the true energetic order of the early or distant universe.
+
+This marks a key departure from conventional thermal models, opening the door to new temperature definitions rooted in structural information rather than energy density alone.
+

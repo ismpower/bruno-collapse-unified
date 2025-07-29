@@ -1,0 +1,69 @@
+filename: registry.csv
+description: |
+  Central Bruno Engine registry file containing high-confidence candidate 
+  events, their host galaxy, estimated fluence at Earth, and entropy evaluation
+  metadata.
+
+source: Bruno Entropy Engine runtime outputs  
+validated: true
+
+columns:
+  - name: Event Name
+    type: string
+    description: Name of the detected event (e.g. IceCube-49427574)
+
+  - name: Detection Date (UTC)
+    type: datetime
+    description: Timestamp of the neutrino or GRB detection in UTC
+
+  - name: Source Galaxy
+    type: string
+    description: Host galaxy associated with the transient event
+
+  - name: RA (J2000)
+    type: float
+    description: Right Ascension of the event in degrees (J2000)
+
+  - name: Dec (J2000)
+    type: float
+    description: Declination of the event in degrees (J2000)
+
+  - name: Distance (Mpc)
+    type: float
+    description: Distance to the source in megaparsecs
+
+  - name: Explosion Energy (erg)
+    type: float
+    description: Estimated explosion energy in ergs
+
+  - name: Bruno Trigger Time (s)
+    type: float
+    description: Time since neutrino detection when Bruno entropy conditions are met
+
+  - name: Estimated Collapse Time (UTC)
+    type: datetime
+    description: UTC time corresponding to theoretical collapse onset
+
+  - name: fluence_total_J_m2
+    type: float
+    description: Predicted fluence observed at Earth in joules per square meter
+
+  - name: Bruno Threshold Crossed
+    type: boolean
+    description: Indicates if fluence crossed entropy-detection threshold
+
+  - name: Neutrino Detected
+    type: boolean
+    description: True if associated high-energy neutrino was detected
+
+  - name: Neutrino Energy (TeV)
+    type: float
+    description: Energy of the associated neutrino (if any), in teraelectronvolts
+
+  - name: Positional Match Confidence
+    type: string
+    description: Qualitative label for sky match certainty (e.g., "High", "Low")
+
+  - name: Notes
+    type: string
+    description: Comments or human-vetted annotations for the event

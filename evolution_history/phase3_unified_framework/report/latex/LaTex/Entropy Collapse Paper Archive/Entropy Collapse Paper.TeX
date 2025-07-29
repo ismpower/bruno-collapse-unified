@@ -1,0 +1,84 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath, amssymb, graphicx, authblk}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+
+\title{Entropy Collapse as a Surface-Stabilized Quantum Phenomenon: \\ A Novel Framework for Cosmic Structure}
+\author{\textbf{[Ismail Chajar]}}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+We present a novel thermodynamic framework in which entropy collapse at extreme gravitational compression is not a volumetric phenomenon, but rather one that naturally leads to surface projection. Using a constant derived from empirical entropy thresholds---referred to here as the \textit{Chajar Constant}---we demonstrate that entropy within black hole systems becomes geometrically constrained and structurally stabilized near a temperature approximately 0.001005 times the Planck temperature. This critical boundary is shown to coincide with an irreversible transition into a 2D holographic state, supporting the hypothesis that black hole interiors are surface-stabilized quantum systems.
+\end{abstract}
+
+\section{Introduction}
+The interplay between gravity and entropy has long been central to black hole thermodynamics. Bekenstein-Hawking entropy, Hawking radiation, and the holographic principle each describe black holes as boundary-limited systems. This paper revisits that interpretation by proposing a direct mechanism for entropy projection, arising from quantum-stabilization during collapse.
+
+\section{Background and Motivation}
+Traditionally, entropy is viewed as an extensive quantity that scales with volume. However, black hole entropy scales with surface area:
+\begin{equation}
+S_{BH} = \frac{k_B c^3 A}{4 G \hbar}
+\end{equation}
+This paradox is often interpreted as evidence of a holographic universe. We propose that this is not an abstract property, but the direct result of a collapse mechanism that reorganizes entropy at a quantum level.
+
+\section{The Bruno Constant and Entropy Boundary}
+We define the \textbf{Bruno Constant}:
+\begin{equation}
+\boxed{k_c \approx 0.001005}
+\end{equation}
+This constant defines a threshold:
+\begin{equation}
+T_c = k_c \cdot T_{Planck}
+\end{equation}
+At this temperature, entropy no longer scales volumetrically. Empirical analysis using neutron star and black hole entropy yielded:
+\begin{align}
+S_{NS} &\approx 3.61 \times 10^{34} \, \text{J/K} \\
+S_{BH} &\approx 7.01 \times 10^{54} \, \text{J/K} \\
+K_{collapse} &= \frac{S_{BH}}{S_{NS}} \approx 1.94 \times 10^{20}
+\end{align}
+
+\section{Volume Compression and Entropy Density}
+Using entropy density at the Bruno temperature:
+\begin{equation}
+\rho_S^{volume} = \frac{4}{3} a T_c^3
+\end{equation}
+We compute the minimum volume required to contain $S_{BH}$:
+\begin{equation}
+V_{required} = \frac{S_{BH}}{\rho_S^{volume}} \approx 1.53 \times 10^{-19} \, \text{m}^3
+\end{equation}
+Compared to the Schwarzschild volume for a 10 solar mass black hole:
+\begin{equation}
+V_{BH} \approx 1.08 \times 10^{14} \, \text{m}^3
+\end{equation}
+This mismatch implies volumetric entropy storage is physically implausible.
+
+\section{Surface Encoding and Holographic Consistency}
+Instead, entropy must be stored on the event horizon:
+\begin{equation}
+A = 4\pi r_s^2
+\end{equation}
+With surface entropy density:
+\begin{equation}
+\rho_S^{surface} = \frac{S_{BH}}{A} \approx 6.40 \times 10^{44} \, \text{J/K/m}^2
+\end{equation}
+This is consistent with both the holographic principle and quantum gravity theories.
+
+\section{Discussion and Implications}
+This entropy-first view allows us to reconcile General Relativity and Quantum Mechanics at the edge of collapse. The Bruno Constant acts as a critical parameter: a quantum thermostat governing when entropy projection replaces classical thermodynamic behavior. This supports the hypothesis that black hole interiors are entangled, stable, and 2D at fundamental scales.
+
+\section{Conclusion}
+Our findings suggest that black hole entropy collapse is not simply an event horizon effect, but a deep thermodynamic consequence of gravitational quantum stabilization. The Chajar Constant offers a measurable threshold for when 3D entropy structure can no longer be maintained and must resolve as a 2D surface. This model is consistent with observational black hole thermodynamics and offers a new bridge between classical and quantum regimes.
+
+\section*{Code and Resources}
+The full set of Python simulations, entropy modeling scripts, and figure generation code supporting this work are openly available at:
+\begin{center}
+\url{https://github.com/ismpower/Entropy-Collapse-Research}
+\includegraphics[width=0.3	extwidth]{qr-code.png}\
+\textit{Scan for full code repository}\
+\end{center}
+
+\end{document}
